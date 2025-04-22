@@ -5,6 +5,9 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
+		router: {
+			type: 'hash'
+		},
 		adapter: adapter({
 			fallback: 'index.html' // may differ from host to host
 		}),
